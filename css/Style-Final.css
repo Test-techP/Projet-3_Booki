@@ -1,0 +1,292 @@
+:root {
+  --main-color: #0065FC;
+  --main-bg-color: #F2F2F2;
+  --filter-bg-color: #DEEBFF;
+  --grey-bg-color: #d9d9d9; 
+  --text-color: black;
+}
+
+body {
+    margin: 0;
+}
+
+/****** Navbar **********/
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0;
+}
+
+nav img {
+    width: 3.8125em;
+    height: auto;
+}
+
+.logo{
+    margin-top: 0.875em;
+}
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li { 
+    margin-left: 4.3125em; 
+}
+
+nav a:hover {
+    border-top: 0.125em solid var(--main-color);
+    color: var(--main-color);
+    padding-top: 0.9375em;
+}
+
+/******* Header ******/
+.header-title {
+    margin-bottom: 2.0625em;
+    margin-top: 2.5em;
+}
+
+.header-title h1 {
+    font-size: 1.375em;
+    margin-bottom: 0.4em;
+}
+
+.header-title subtitle {
+    font-size: initial;
+}
+
+.search-bar {
+    display: grid;
+    grid-template-columns: 3.125em 12.0625em 8.4375em; 
+    height: 3.1875em;              
+    max-width: 25em;          
+}
+
+.search-bar .icon-location {
+    border: 0.0625em solid var(--main-bg-color);
+    border-radius: 15px 0 0 15px;
+    background-color: var(--main-bg-color);
+    align-items: center;
+}
+
+.search-bar .icon-location i {
+    color: var(--text-color);
+    font-size: 1.3125em;
+}
+
+.search-bar .input {
+    border: 0.0625em solid var(--main-bg-color);
+    padding: 0 1.2em;
+    font-weight: bold;
+    font-size: 1.125em;
+    color: var(--text-color);
+}
+
+.input::placeholder {
+    color: var(--text-color);    
+    opacity: 1;       
+    font-weight: bold; 
+}
+
+.search-bar .research  {
+    border: 0.0625em solid var(--main-bg-color);
+    border-radius: 0 15px 15px 0;
+    background: var(--main-color);
+    color: var(--main-bg-color);
+    font-weight: bold;
+    font-size: 1.125em;
+    cursor: pointer;
+}
+
+.filters h2 {
+    font-size: 1.125em;
+}
+
+.filters {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 0.875em;
+    margin-top: 2.125em;
+    margin-bottom: 2.29em;
+    width: max-content;
+}
+
+.filters .fa-solid {
+    font-size: 1.29em;
+    padding-right: 0.7em;
+}
+
+
+.filters-buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 0.9375em;
+
+}
+
+.filters-buttons button{
+    border: 0.125em solid var(--grey-bg-color);
+    border-radius: 1.875em;
+    background: transparent;
+    font-weight: bold;
+    font-size: 1.0625em;
+    padding: 0 15.5px;
+}
+
+
+.filters-buttons button:hover{  
+    background: var(--filter-bg-color);
+}
+
+.info {
+    margin-bottom: 2.3125em;
+    display: flex;
+    align-items: center;
+    gap: 0.625em;
+}
+
+ .info .fa-solid {
+    font-size: smaller;
+    padding-right: 0.97em;
+    padding-left: 0.75em;
+    border-radius: 100%;
+    width: 0px;
+    height: 1.3em;
+    border: 0.1em solid var(--grey-bg-color);
+    display: flex;
+    justify-content: center;
+    padding-top: 0.1875em;
+   }
+
+/***** Hébergements ***********/
+.hebergements-title h2{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 1.375em;
+    margin-bottom: 0em;
+    margin-top: -2px;
+}
+
+.hebergements-and-populaires section {
+    padding-bottom: 15px;
+}
+
+.hebergements { 
+    order: 1; 
+}
+
+.populaires { 
+    order: 2; 
+}
+
+.hebergements-cards .card {
+    margin-top: 30px;
+    width: 238px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.hebergements-cards img {
+    width: 100%;
+    height: 7.9375em;
+    object-fit: cover;
+    border-radius: 1.25em 1.25em 0 0;
+}
+
+.hebergements-cards .card-content {
+    width: 100%;
+    padding-left: 0.9375em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.hebergements-cards .card-title {
+    margin-top: 0.4em;
+    margin-bottom: 0.25em;
+}
+
+.hebergements-cards .card-subtitle {
+    margin: 0;
+}
+
+.hebergements-cards .card-rating {
+    margin-bottom: 0.3125em;
+}
+
+.hebergements-and-populaires .hebergements-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0 28px;
+}
+
+.plus {
+    margin-top: 24px;
+    margin-left: -2px;
+}
+
+/****** Activités ***********/
+.Activities {
+  
+    padding: 1.875em;
+}
+
+.Activities-title {
+    margin-top: 33px;
+}
+
+.Activities-cards {
+    display: flex;
+    margin-top: 2.0625em;
+    justify-content: space-between;
+
+}
+
+.cards {
+    background-color: #ffffff;
+    border-radius: 1.25em;
+    height: 27.4375em;
+    filter: drop-shadow(0px 0.9375em 00.9375em rgba(0, 0, 0, 0.1));
+    
+}
+
+.Activities-cards article img {
+    width: 18.59375em;
+    height: 23.75em;
+    border-radius: 1.25em 1.25em 0 0;
+    object-fit: cover;
+}
+
+.Activities-cards .card-title {
+    padding-left: 1.25em;
+    padding-bottom: 1.25em;
+}
+
+/****** Footer ***********/
+footer {
+    background: var(--main-bg-color);
+    padding: 1.875em;
+}
+
+.tableau {
+    display: flex;
+    background: var(--main-bg-color);
+    padding: 1em;
+}
+
+.cellule {
+    flex: 1;
+}
+
+.cellule > * {
+    margin: 16px 0;
+}
+
+.cellule > *:first-child {
+    margin-top: 0;
+}

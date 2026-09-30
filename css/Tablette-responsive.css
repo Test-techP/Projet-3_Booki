@@ -1,0 +1,94 @@
+/****** Version tablette ***********/
+@media   (max-width: 1024px) and  (min-width: 768px) {
+
+  body {
+    font-size: 1em;
+  }
+
+  .filters {
+    display: flex;
+    margin-top: 1.25em;
+    gap: 0.1875em;
+    flex-direction: column;
+  }
+
+  .filters-buttons {
+    width: max-content;
+    height: 3.125em;
+  }
+
+  .filters-buttons button {
+    padding-left: 15px;
+    padding-right: 10px;
+  }
+.filters .fa-solid {
+    font-size: 21px;
+    padding-right: 17px;
+}
+  /****** Sections Hébergements + Populaires ***********/
+
+.hebergements .populaires {
+    width: 100%;
+    height: 611px;
+  }
+
+
+.hebergements-and-populaires section {
+    padding-bottom: 11px;
+}
+.hebergements-title h2 {
+    margin-top: 0px;
+
+}  
+.hebergements-cards .card {
+  margin-top: 2.0625em;
+  width: 16em;
+  height: 12.125em;
+  border-radius: 1.25em;
+  overflow: hidden;
+}
+
+.populaires {
+  height: 250px;
+}
+
+.populaires-cards{
+            padding-bottom: 25px;
+}
+
+.populaires-cards .card {
+    display: flex;
+    margin-top: 20px;
+}
+.plus {
+    margin-top: 30px;
+}
+/****** Activités ***********/
+
+.Activities-title {
+    margin-top: 36px;
+}
+
+.Activities-cards{
+    gap: 1em;
+    box-sizing: border-box;
+
+}
+
+.cards {
+  height: 16.875em;
+  width: 12.0625em;
+}
+
+.Activities-cards article img {
+  border-radius: 1.25em 1.25em 0 0;
+  object-fit: cover;
+  width: 12.0625em;
+  height: 12.5em;
+}
+
+.Activities-cards .card-title {
+  padding-left: 1.25em;
+  padding-bottom: 1.25em;
+}
+}
